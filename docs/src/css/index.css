@@ -1,0 +1,223 @@
+.cover,.show{
+    background: linear-gradient(to bottom right, #5489ba, #2073c2 60%, #dff6ff)!important;
+    /* color: antiquewhite; */
+}
+
+/* logo 图片设置 */
+.cover-main p img {
+    width        : 150px;
+    border-radius: 50%;
+} 
+.anchor{
+    font-weight: 600;
+    color: rgb(171, 201, 227) !important;
+}
+.cover-main ul li{
+    color:rgb(11, 246, 235);
+    font-size: 25px;
+   
+}
+:root {
+    /* Tab blocks */
+    --docsifytabs-border-color          : #ededed;
+    --docsifytabs-border-px             : 1px;
+    --docsifytabs-border-radius-px      : ;
+    --docsifytabs-margin                : 1.5em 0;
+
+    /* Tabs */
+    --docsifytabs-tab-background        : #f8f8f8;
+    --docsifytabs-tab-background--active: var(--docsifytabs-content-background);
+    --docsifytabs-tab-color             : #999;
+    --docsifytabs-tab-color--active     : inherit;
+    --docsifytabs-tab-highlight-px      : 3px;
+    --docsifytabs-tab-highlight-color   : var(--theme-color, currentColor);
+    --docsifytabs-tab-padding           : 0.6em 1em;
+
+    /* Tab content */
+    --docsifytabs-content-background    : inherit;
+    --docsifytabs-content-padding       : 1.5rem;
+}
+
+
+/* 密码校验 */
+ /* 遮罩层样式 */
+ .overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+/* 容器样式 */
+.password_input {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%; /* 设置容器宽度为屏幕宽度的80% */
+    max-width: 400px; /* 设置容器最大宽度为400px */
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+}
+
+/* 提示文本样式 */
+.password_input p {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+/* 输入框样式 */
+.password_input input[type="password"] {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    border: none;
+    border-bottom: 2px solid #ccc;
+}
+
+/* 按钮样式 */
+.password_input button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor:pointer
+}
+
+.password_input button:hover {
+    background-color:#3E8E41
+}
+
+/* 主题 */
+/* .{
+    position: fixed;
+    right: 40px;
+    bottom: 66px;
+    width: 65px;
+    height: 35px;
+    background-color: #29a9e0cf;  
+    color: #ffffff;  
+    border-radius: 15px;  
+    font-size: 16px;  
+    color: rebeccapurple;
+    font-weight: 600;
+    line-height: 20px;
+    text-align: center;  
+    cursor: pointer;
+} */
+.teme:hover {
+    background-color: #ebdfa3;
+    transform: scale(1.05);
+  }
+
+
+/* 定义滑动按钮的基本样式 */
+/* .switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+}
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+input:checked + .slider {
+    background-color: #2196F3;
+}
+input:focus + .slider {
+    box-shadow: 0 0 1px #2196F3;
+}
+input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+}
+.slider.round {
+  border-radius: 34px;
+}
+.slider.round:before {
+  border-radius:50%;
+} */
+
+
+/* 返回顶部按钮样式 */
+/* #scrollToTopBtn {
+    display: none;
+    position: fixed;
+    right: 40px;
+    bottom: 110px;
+    width: 65px;
+    height: 35px;
+    background-color: #29a9e0cf;  
+    color: #ffffff;  
+    border-radius: 15px;  
+    font-size: 16px;  
+    color: rebeccapurple;
+    font-weight: 600;
+    line-height: 20px;
+    text-align: center;  
+    cursor: pointer;
+  }
+ */
+  #scrollToTopBtn:hover {
+    background-color: #ebdfa3;
+    transform: scale(1.05);
+  }
+
+  /* 菜谱app图片样式 */
+  .menuAppClass{
+    width: 20vw;
+    margin-left: 20vw;
+  }
+  
+
+  /* go study style */
+
+  .goBaseImg{
+    width: 29vw;
+  }
+
+/* 全局样式 */
+.halfWidth{
+    width: 40vw;
+    margin-left: 10vw;
+}
+/* 全局样式  :class=bsWidth'*/
+.bsWidth{
+    width: 80vw;
+}

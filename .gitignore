@@ -1,0 +1,33 @@
+# 忽略操作系统自动生成的文件
+.DS_Store
+Thumbs.db
+
+# 忽略编译生成的中间文件、可执行文件等
+*.o
+*.exe
+*.dll
+*.so
+
+# 忽略编程语言或框架自动生成的文件
+/node_modules
+/__pycache__/
+*.py[cod]
+*.class
+
+# 忽略包含敏感信息的配置文件
+/config.json
+.env
+
+# 忽略日志文件
+*.log
+
+# 忽略构建目录
+/build
+/dist
+
+# 忽略个人IDE设置
+.idea/
+.vscode/
+*.sublime-workspace
+
+# 其他忽略规则...
