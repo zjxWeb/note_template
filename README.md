@@ -61,3 +61,11 @@
   ![pdfShow](./docs/src/img/1.png)
 + 结果图2——阅读界面及其关闭按钮
   ![pdfShow](./docs/src/img/2.png)
+
+> 最后记得在 `src/css/index.css`中加入以下样式
+```css
+/* github图标层级 */
+.github-corner{
+    z-index: 0!important;
+}
+```
