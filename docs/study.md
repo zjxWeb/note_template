@@ -1,1 +1,2 @@
-<iframe-component src="https://www.example.com"></iframe-component>
+
+<iframe-component src="./src/pdf/stl.pdf"></iframe-component>

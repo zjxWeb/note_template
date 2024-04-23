@@ -23,7 +23,8 @@ class IFrameComponent extends HTMLElement {
 
 
         // 获取传入的src属性值
-        const src = this.getAttribute('src');
+        const btnsrc = this.getAttribute('src');
+        button.setAttribute('src', btnsrc);
 
         // 创建iframe元素
         const iframe = document.createElement('iframe');
@@ -35,7 +36,7 @@ class IFrameComponent extends HTMLElement {
         });
 
       
-        iframe.setAttribute('src', src);
+        iframe.setAttribute('src', btnsrc);
         iframe.style.width = '98%';
         iframe.style.height = '95%';
 

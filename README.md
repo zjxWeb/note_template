@@ -42,3 +42,22 @@
 5. **具体示例可以看 `study`这个模块**，来搭建自己的笔记
 
 > 有任何问题都可以联系本人——https://zjxweb.github.io/#/onself
+
+## dpf阅读器
+> 此处的pdf阅读器，我将其 封装到了一个组件中，方便大家使用。
+> 1. 在 `index.html`中引入相对应的js文件 
+
+```js
+<script src="./src/js/pdfShow.js"></script>
+```
++ 注意你自己放的位置哦
+  
+2. 在你需要的`.md`文件中直接引入组件就好
+```js
+<iframe-component src="./src/pdf/stl.pdf"></iframe-component>
+```
+> 注意：此处的`src`就是你的pdf的路径
++ 结果图1——点击按钮弹出阅读界面
+  ![pdfShow](./docs/src/img/1.png)
++ 结果图2——阅读界面及其关闭按钮
+  ![pdfShow](./docs/src/img/2.png)
