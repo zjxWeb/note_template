@@ -6,10 +6,23 @@ class IFrameComponent extends HTMLElement {
         // 创建一个按钮元素
         const button = document.createElement('button');
         let  butTex = 'Show PDF'
-        button.style.backgroundColor = 'blue';
-        button.style.width = '100px';
-        button.style.height = '50px';
+        // 好看的渐变背景色
+        button.style.backgroundColor = 'LightSkyBlue';
+        button.style.width = '10vw';
+        button.style.height = '5vh';
         button.innerText = butTex;
+        button.borderRadius = "30px"
+        // 鼠标放上去显示小手,并改变背景色
+        button.addEventListener('mouseover', () => {
+            button.style.cursor = 'pointer';
+            button.style.backgroundColor = 'DeepSkyBlue';
+        });
+        // 移出鼠标恢复原样
+        button.addEventListener('mouseout', () => {
+            button.style.cursor = 'default';
+            button.style.backgroundColor = 'LightSkyBlue';
+        });
+        
 
         const dialog = document.createElement('dialog');
         dialog.style.width = "100vw";
