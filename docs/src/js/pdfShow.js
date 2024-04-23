@@ -8,7 +8,7 @@ class IFrameComponent extends HTMLElement {
         let  butTex = 'Show PDF'
         // 好看的渐变背景色
         button.style.backgroundColor = 'LightSkyBlue';
-        button.style.width = '10vw';
+        // button.style.width = '10vw';
         button.style.height = '5vh';
         button.innerText = butTex;
         button.borderRadius = "30px"
@@ -22,7 +22,6 @@ class IFrameComponent extends HTMLElement {
             button.style.cursor = 'default';
             button.style.backgroundColor = 'LightSkyBlue';
         });
-        
 
         const dialog = document.createElement('dialog');
         dialog.style.width = "100vw";
@@ -81,6 +80,14 @@ class IFrameComponent extends HTMLElement {
         })
 
         shadow.appendChild(button);
+
+        // 截取btnsrc中的文件名字，传递给按钮的文本butTex
+        console.log(btnsrc,butTex)
+
+        // 从./src/pdf/stl.pdf 中截取出文件名字stl
+        butTex = btnsrc.substring(btnsrc.lastIndexOf('/') + 1, btnsrc.lastIndexOf('.'));
+        button.innerText = butTex
+
         // dialog.appendChild(iframe);
         }
     }
