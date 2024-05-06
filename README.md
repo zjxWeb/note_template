@@ -69,3 +69,37 @@
     z-index: 0!important;
 }
 ```
+
+## `EPUB`电子书解析
+
+使用方式可以参考上方的使用
+
+1. 引入对应的js
+
+```html
+  <script src="./src/js/pdfShow.js"></script>
+  <script src="./src/js/epub/jszip.min.js"></script>
+  <script src="./src/js/epub/Blob.min.js"></script>
+  <script src="./src/js/epub/deflate.min.js"></script>
+  <script src="./src/js/epub/inflate.min.js"></script>
+  <script src="./src/js/epub/jquery.min.js"></script>
+  <script src="./src/js/epub/epub.js"></script>
+  <script src="./src/js/epubPage.js"></script>
+```
+
+> 如果没有前端的基础，请不要随意更改上方js的引入顺序
+
+2. 接下来就可以使用了
+
+```markdown
+<div-component src="./src/pdf/12.epub"></div-component>
+```
+
+> src后面加的依然是对应的路径
+
+![3](./docs/src/img/3.png)
+
+
+
+
+
