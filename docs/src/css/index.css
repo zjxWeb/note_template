@@ -226,3 +226,11 @@ input:checked + .slider:before {
 .github-corner{
     z-index: 0!important;
 }
+
+.bookBox{
+    width: 90vw;
+    height: 90vh;
+    background-color:antiquewhite;
+    overflow: hidden;
+    /* display: none; */
+}
